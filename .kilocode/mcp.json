@@ -1,0 +1,50 @@
+{
+  "mcpServers": {
+    "git": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/inspector",
+        "uvx",
+        "mcp-server-git",
+        "--repository",
+        "/"
+      ],
+      "disabled": true,
+      "alwaysAllow": []
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "alwaysAllow": [
+        "puppeteer_navigate"
+      ],
+      "disabled": true
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/"
+      ],
+      "disabled": false,
+      "alwaysAllow": []
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--browser=",
+        "--headless=",
+        "--viewport-size="
+      ],
+      "disabled": true,
+      "alwaysAllow": []
+    }
+  }
+}

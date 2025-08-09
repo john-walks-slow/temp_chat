@@ -1,0 +1,29 @@
+{
+  "name": "temp-chatroom",
+  "version": "1.0.0",
+  "description": "A minimalist, temporary chatroom that opens at random times.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "chatroom",
+    "minimalist",
+    "temporary",
+    "indie"
+  ],
+  "author": "Kilo Code",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
+    "eslint": "^9.33.0",
+    "nodemon": "^2.0.22"
+  }
+}
